@@ -1,4 +1,14 @@
-h2 {
+h1 {
  text-align: center;
-    color: red;
+    color: #9c5d5f;
+}
+body {
+    background-color: #002b2b;
+}
+
+P{
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    color:#9c5d5f 
 }
