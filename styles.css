@@ -53,7 +53,7 @@ nav {
 .chef-image, .hot-dogs, .food-stand, .sandwhich {
     display: flex;
     justify-content: center; /* Center images horizontally within the container */
-    padding: 10px; /* Optional: add padding */
+    padding: 40px; /* Optional: add padding */
 }
 
 .chef-image img, .hot-dogs img, .food-stand img, .sandwhich img {
@@ -78,9 +78,39 @@ nav {
 }
 
 footer {
+    background-color: #002b2b; /* Dark background color to match body */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: larger;
-    text-align: center;
-    color: #9c5d5f;
+    color: #9c5d5f; /* Text color */
+    padding: 20px; /* Padding around the footer */
+    display: flex; /* Use Flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+footer .footer-content {
+    display: flex; /* Use Flexbox within the footer content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+footer .social-media {
+    display: flex; /* Arrange social media icons horizontally */
+    gap: 10px; /* Space between icons */
+    margin-bottom: 10px; /* Space between icons and copyright statement */
+}
+
+footer .social-media a {
+    display: inline-block; /* Ensures icons are displayed as inline-block */
+}
+
+footer .social-media img {
+    width: 40px; /* Adjust size of icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: larger; /* Adjust font size as needed */
 }
