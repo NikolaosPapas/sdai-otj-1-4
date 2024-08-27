@@ -39,9 +39,9 @@ p {
 nav {
     display: flex;
     justify-content: center; /* Center items horizontally */
-    gap: 10px; /* Optional: space between links */
-    padding: 10px; /* Optional: add padding */
-    background-color: #002b2b; /* Optional: background color for the nav */
+    gap: 10px; /* Space between links */
+    padding: 10px;
+    background-color: #002b2b; /* Background color for the nav */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: larger;
@@ -49,68 +49,54 @@ nav {
     color: #9c5d5f;
 }
 
-/* Ensure images in these sections are arranged horizontally and are responsive */
-.chef-image, .hot-dogs, .food-stand, .sandwhich {
+.chef-image, .hot-dogs, .food-stand, .sandwich {
     display: flex;
     justify-content: center; /* Center images horizontally within the container */
-    padding: 40px; /* Optional: add padding */
+    padding: 40px;
 }
 
-.chef-image img, .hot-dogs img, .food-stand img, .sandwhich img {
+.chef-image img, .hot-dogs img, .food-stand img, .sandwich img {
     max-width: 100%; /* Ensure images are responsive */
     height: auto; /* Maintain aspect ratio */
-    margin: 5px; /* Optional: space between images */
+    margin: 5px;
 }
 
-.hot-dogs {
-    flex-direction: row; /* Arrange images horizontally */
-    overflow-x: auto; /* Allow horizontal scrolling if images overflow */
-}
-
-.food-stand {
-    flex-direction: row; /* Arrange images horizontally */
-    overflow-x: auto; /* Allow horizontal scrolling if images overflow */
-}
-
-.sandwhich {
+.hot-dogs, .food-stand, .sandwich {
     flex-direction: row; /* Arrange images horizontally */
     overflow-x: auto; /* Allow horizontal scrolling if images overflow */
 }
 
 footer {
-    background-color: #002b2b; /* Dark background color to match body */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: larger;
-    color: #9c5d5f; /* Text color */
-    padding: 20px; /* Padding around the footer */
-    display: flex; /* Use Flexbox to align items */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    background-color: #002b2b;
+    color: #9c5d5f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer .footer-content {
-    display: flex; /* Use Flexbox within the footer content */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 footer .social-media {
-    display: flex; /* Arrange social media icons horizontally */
-    gap: 10px; /* Space between icons */
-    margin-bottom: 10px; /* Space between icons and copyright statement */
+    display: flex;
+    gap: 10px;
 }
 
 footer .social-media a {
-    display: inline-block; /* Ensures icons are displayed as inline-block */
+    display: inline-block;
 }
 
 footer .social-media img {
-    width: 40px; /* Adjust size of icons */
-    height: auto; /* Maintain aspect ratio */
+    width: 65px; /* Adjust size of icons */
+    height: 65px; /* Maintain aspect ratio */
 }
 
 footer p {
-    margin: 0; /* Remove default margin */
-    font-size: larger; /* Adjust font size as needed */
+    margin: 0;
+    font-size: larger;
 }
