@@ -1,119 +1,140 @@
 body {
-    background-color: #002b2b;
+    background-color: #002b2b; /* Set the background color of the entire page to a dark teal */
 }
 
 h1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    color: #9c5d5f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Use a system font stack for the h1 element */
+    font-weight: bold; /* Make the font weight bold */
+    font-size: 40px; /* Set the font size to 40 pixels */
+    text-align: center; /* Center the text horizontally */
+    color: #9c5d5f; /* Set the text color to a muted rose */
 }
 
 h2 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    color: #f1e3e3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Use the same system font stack for the h2 element */
+    font-weight: bold; /* Make the font weight bold */
+    font-size: 40px; /* Set the font size to 40 pixels */
+    text-align: center; /* Center the text horizontally */
+    color: #f1e3e3; /* Set the text color to a very light pink */
 }
 
 h3 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    color: #f1e3e3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Use the same system font stack for the h3 element */
+    font-weight: bold; /* Make the font weight bold */
+    font-size: 40px; /* Set the font size to 40 pixels */
+    text-align: center; /* Center the text horizontally */
+    color: #f1e3e3; /* Set the text color to a very light pink */
 }
 
 h4 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: larger;
-    text-align: center;
-    color: #f1e3e3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Use the same system font stack for the h4 element */
+    font-weight: bold; /* Make the font weight bold */
+    font-size: larger; /* Set the font size to a larger size than the default */
+    text-align: center; /* Center the text horizontally */
+    color: #f1e3e3; /* Set the text color to a very light pink */
 }
 
 p {
-    padding: 1%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    line-height: 1.5;
-    font-size: larger;
-    text-align: center;
-    color: #9c5d5f;
+    padding: 1%; /* Add padding of 1% around paragraphs */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Use the same system font stack for paragraphs */
+    font-weight: bold; /* Make the font weight bold */
+    line-height: 1.5; /* Set the line height to 1.5 for better readability */
+    font-size: larger; /* Set the font size to a larger size than the default */
+    text-align: center; /* Center the text horizontally */
+    color: #9c5d5f; /* Set the text color to a muted rose */
 }
-/* remember to change the following and view the snapshots, redo project 3 and finish 4*/
-li, ul, span, address { 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    color: #f1e3e3;
-} 
 
+/* Styling for lists, spans, and addresses */
+li, ul, span, address { 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Use the same system font stack */
+    font-weight: bold; /* Make the font weight bold */
+    font-size: 20px; /* Set the font size to 20 pixels */
+    text-align: center; /* Center the text horizontally */
+    color: #f1e3e3; /* Set the text color to a very light pink */
+}
+
+.gallery {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center items horizontally within the gallery */
+    gap: 20px; /* Add space between items */
+    padding: 40px; /* Add padding around the gallery */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if the container is too narrow */
+}
+
+.gallery div {
+    flex: 1 1 auto; /* Allow items to grow and shrink as needed */
+    text-align: center; /* Center the text (and images) within their containers */
+}
+
+.gallery img {
+    max-width: 100%; /* Ensure images are responsive and do not exceed their container's width */
+    height: auto; /* Maintain the aspect ratio of images */
+    border-radius: 8px; /* Add rounded corners to images */
+}
 
 nav a {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
+    display: flex; /* Use Flexbox for layout within navigation links */
+    justify-content: center; /* Center links horizontally within the nav */
     gap: 10px; /* Space between links */
-    padding: 10px;
-    background-color: #002b2b; /* Background color for the nav */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    font-size: larger;
-    text-align: center;
-    color: #9c5d5f;
+    padding: 10px; /* Add padding around links */
+    background-color: #002b2b; /* Set the background color of the nav */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Use the same system font stack */
+    font-weight: bold; /* Make the font weight bold */
+    font-size: larger; /* Set the font size to larger */
+    text-align: center; /* Center the text horizontally */
+    color: #9c5d5f; /* Set the text color to a muted rose */
 }
 
-.chef-image, .hot-dogs, .food-stand, .sandwich {
-    display: flex;
-    justify-content: center; /* Center images horizontally within the container */
-    padding: 40px;
+.chef-image, .hot-dogs, .food-stand {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center images horizontally within these containers */
+    padding: 40px; /* Add padding around the containers */
 }
 
-.chef-image img, .hot-dogs img, .food-stand img, .sandwich img {
+.chef-image img, .hot-dogs img, .food-stand img {
     max-width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin: 5px;
+    height: auto; /* Maintain aspect ratio of images */
+    margin: 5px; /* Add margin around images */
 }
 
 .hot-dogs, .food-stand, .sandwich {
-    flex-direction: row; /* Arrange images horizontally */
-    overflow-x: auto; /* Allow horizontal scrolling if images overflow */
+    flex-direction: row; /* Arrange child elements (images) in a horizontal row */
+    overflow-x: auto; /* Allow horizontal scrolling if the content overflows */
 }
 
 footer {
-    background-color: #002b2b;
-    color: #9c5d5f;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #002b2b; /* Set the background color of the footer */
+    color: #9c5d5f; /* Set the text color of the footer */
+    padding: 20px; /* Add padding inside the footer */
+    display: flex; /* Use Flexbox for layout within the footer */
+    flex-direction: column; /* Arrange child elements (footer content and paragraph) in a vertical column */
+    align-items: center; /* Center child elements horizontally */
 }
 
 footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Arrange child elements (social media icons) in a vertical column */
+    align-items: center; /* Center child elements horizontally */
+    margin-bottom: 10px; /* Add margin below the footer content */
 }
 
 footer .social-media {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center social media icons horizontally */
+    gap: 10px; /* Space between social media icons */
 }
 
 footer .social-media a {
-    display: inline-block;
+    display: inline-block; /* Ensure each social media link is displayed as an inline block */
 }
 
 footer .social-media img {
-    width: 65px; /* Adjust size of icons */
-    height: 65px; /* Maintain aspect ratio */
+    width: 65px; /* Set the width of social media icons */
+    height: 65px; /* Maintain the aspect ratio of icons */
 }
 
 footer p {
-    margin: 0;
-    font-size: larger;
+    margin: 0; /* Remove default margin from the paragraph */
+    font-size: larger; /* Set the font size to larger */
+    text-align: center; /* Center the text horizontally */
 }
