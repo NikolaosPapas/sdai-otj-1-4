@@ -44,7 +44,7 @@ p {
     color: #9c5d5f;
 }
 /* remember to change the following and view the snapshots, redo project 3 and finish 4*/
-ul, span, address { 
+li, ul, span, address { 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -52,7 +52,8 @@ ul, span, address {
     color: #f1e3e3;
 } 
 
-nav {
+
+nav a {
     display: flex;
     justify-content: center; /* Center items horizontally */
     gap: 10px; /* Space between links */
