@@ -1,26 +1,21 @@
-console.log("My java works")// to see this open the inspector than console. also remember to fix the images 
 
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav a');
 
-//Function to calculate the area of a rectangle
-//Definition of the function
-function areaRectangle (legnth, width) {
-    return legnth * width
-}
-
-//call function to use
-console.log (areaRectangle(10, 20))
-
-
-//challenge
-function divide (num1, num2) {
-    return num1/num2
-}
-
-console.log (divide(10,20))
-console.log (divide(120,230))
-console.log (divide(20,30))
-
-
-
-
-//challenge 2
+        // Add click event listener to each link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default link behavior
+                
+                // Get the target element by its ID from the href attribute
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                // Scroll to the target element smoothly
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
