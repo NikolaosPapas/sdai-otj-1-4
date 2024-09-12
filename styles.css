@@ -66,10 +66,10 @@ li, ul, span, address {
     text-align: center; /* Center the text (and images) within their containers */
 }
 
-.gallery img {
+.gallery img, hot-dogs {
     max-width: 100%; /* Ensure images are responsive and do not exceed their container's width */
     height: auto; /* Maintain the aspect ratio of images */
-    border-radius: 8px; /* Add rounded corners to images */
+    border-radius: 10px; /* Add rounded corners to images */
 }
 
 nav a {
